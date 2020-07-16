@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity implements LoginInterface.V
     }
 
     public void mapas (View view) {
-        startActivity(new Intent(this,MapaActivity.class));
+        startActivity(new Intent(this,MapsActivity.class));
     }
 
     @Override
@@ -126,7 +126,7 @@ public class LoginActivity extends AppCompatActivity implements LoginInterface.V
     @Override
     public void mtdOnLogin() {
         Toast.makeText(LoginActivity.this, "Has hecho Login correctamente", Toast.LENGTH_SHORT).show();
-        Intent i = new Intent(LoginActivity.this, MapaActivity.class);
+        Intent i = new Intent(LoginActivity.this, MapsActivity.class);
         startActivity(i);
         finish();
     }

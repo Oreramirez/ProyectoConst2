@@ -7,6 +7,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.example.rikuwa_cliente.Login.LoginInterface;
+import com.example.rikuwa_cliente.Login.LoginModelo;
+import com.example.rikuwa_cliente.Login.LoginPresentador;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -52,21 +54,12 @@ public class RegistroActivityTest extends TestCase {
     }
 
     @Test
-    public void testMtdOnLogin(String email, String password) {
+    public void testMtdOnLogin() {
 
-        Context appContext = testMtdOnLogin.getInstrumentation().getTargetContext();
-        assertEquals("com.example.rikuwa_cliente", appContext.getPackageName());
-        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    listener.mtdOnSuccess();
-                }else{
-                    if(task.getException()!=null)
-                        listener.mtdOnError(task.getException().getMessage());
-                }
-            }
-        });
+        /*LoginActivity login=new LoginActivity();
+
+        assertEquals(login.mtdOnLogin(;);*/
+
     }
 
 }

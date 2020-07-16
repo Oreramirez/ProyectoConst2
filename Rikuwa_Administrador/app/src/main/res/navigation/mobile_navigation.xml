@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.rikuwa_administrador.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+<!--        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />-->
+    </fragment>
+<!--    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.rikuwa_administrador.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>-->
+
+    <fragment
+        android:id="@+id/nav_unidades"
+        android:name="com.example.rikuwa_administrador.ui.unidades.UnidadesFragment"
+        android:label="@string/menu_unidades"
+        tools:layout="@layout/unidades_fragment" />
+    <fragment
+        android:id="@+id/nav_productos"
+        android:name="com.example.rikuwa_administrador.ui.productos.ProductosFragment"
+        android:label="@string/menu_productos"
+        tools:layout="@layout/productos_fragment" />
+    <fragment
+        android:id="@+id/nav_horarios"
+        android:name="com.example.rikuwa_administrador.ui.horarios.horarios"
+        android:label="@string/menu_horarios"
+        tools:layout="@layout/horarios_fragment" />
+    <fragment
+        android:id="@+id/nav_recorridos"
+        android:name="com.example.rikuwa_administrador.ui.recorrido.RecorridosFragment"
+        android:label="@string/menu_recorrido"
+        tools:layout="@layout/recorridos_fragment" />
+    <fragment
+        android:id="@+id/nav_usuarios"
+        android:name="com.example.rikuwa_administrador.ui.usuarios.UsuariosFragment"
+        android:label="@string/menu_usuario"
+        tools:layout="@layout/usuarios_fragment" />
+    <fragment
+        android:id="@+id/nav_mensajes"
+        android:name="com.example.rikuwa_administrador.ui.mensajes.MensajesFragment"
+        android:label="@string/menu_mensaje"
+        tools:layout="@layout/mensajes_fragment" />
+</navigation>
